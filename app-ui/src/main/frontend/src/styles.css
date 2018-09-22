@@ -1,0 +1,19 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.common-wrapper {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.flow-form-wrapper {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.report-form-wrapper {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-right: 25%;
+}

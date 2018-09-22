@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><Configuration xmlns="http://logging.apache.org/log4j/2.0/config" monitorInterval="10">
+
+    <Appenders>
+		<RollingFile name="FILE" fileName="logs/${date:yyyyMMdd}/ocs-mission-control.log" filePattern="data/%d{yyyyMMdd}/ocs-mission-control-%i.log">
+            <PatternLayout pattern="%d{MM/dd/yyyy HH:mm:ss.SSS} [%-5level] %c:%t [%F:%L:%M] %X &gt; %msg%n"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10KB"/>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+        </RollingFile>
+
+        <Console name="STDOUT" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d %-5p method: [%t] %C{2} (%F:%L) - %m%n"/>
+		</Console>
+
+    </Appenders>
+
+    <Loggers>
+		<Root level="TRACE">
+            <AppenderRef ref="FILE"/>
+            <AppenderRef ref="STDOUT"/>
+        </Root>
+    </Loggers>
+
+</Configuration>
+
+
