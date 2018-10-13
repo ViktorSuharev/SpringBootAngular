@@ -16,15 +16,8 @@
     <artifactId>app</artifactId>
 
     <properties>
-        <nc.cassandra.connection.client.version>1.3.0.0</nc.cassandra.connection.client.version>
-
         <third-party.log4j.version>2.11.0</third-party.log4j.version>
         <third-party.apache-commons-io.version>2.6</third-party.apache-commons-io.version>
-
-        <third-party.junit.version>4.12</third-party.junit.version>
-        <third-party.mockito.version>2.10.0</third-party.mockito.version>
-        <third-party.cassandra-all.version>3.9</third-party.cassandra-all.version>
-        <third-party.cassandra-unit.version>3.1.3.2</third-party.cassandra-unit.version>
     </properties>
 
     <build>
