@@ -26,6 +26,7 @@
 	<modules>
 		<module>app</module>
 		<module>app-ui</module>
+		<module>dist</module>
 	</modules>
 
 </project>
